@@ -1,0 +1,10 @@
+{
+  "id": "nodebb-plugin-ddsb-link",
+  "library": "./library.js",
+  "hooks": [
+    {
+      "hook": "filter:parse.post",
+      "method": "parse"
+    }
+  ]
+}

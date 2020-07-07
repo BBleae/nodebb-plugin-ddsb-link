@@ -1,0 +1,46 @@
+{
+  "name": "nodebb-plugin-ddsb-link",
+  "version": "0.0.1",
+  "main": "library.js",
+  "keywords": [
+    "nodebb",
+    "plugin"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "author": {
+    "name": "BBleae",
+    "email": "bbleae@outlook.com"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "nbbpm": {
+    "compatibility": "^1.13.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-angular": "^7.1.2",
+    "eslint": "^6.2.2 ",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^2.4.0",
+    "lint-staged": "^8.2.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
